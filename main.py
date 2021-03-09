@@ -1,3 +1,4 @@
+# init vars
 pole = [['-' for x in range(3)] for y in range(3)]
 game_history = {}
 player1 = {'label': '', 'value': 'x'}
@@ -39,6 +40,7 @@ def check_win(player):
     if all(pole[2-i][i] == player['value'] for i in range(3)): # check back diagonal
         return True
     return False
+
 
 
 # Process input from player
